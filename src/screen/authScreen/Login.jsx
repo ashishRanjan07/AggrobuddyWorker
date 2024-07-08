@@ -15,8 +15,10 @@ import ImagePath from '../../utils/ImagePath';
 import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import CustomButton from '../../components/CustomButton';
+import {useNavigation} from '@react-navigation/native';
 
 const Login = () => {
+  const navigation = useNavigation();
   const [userId, setUserId] = useState('');
   const [waringText, setWaringText] = useState('');
   useEffect(() => {
@@ -31,19 +33,19 @@ const Login = () => {
       return;
     }
     try {
-      if (userId === 'aviashishranjan@gmail.com') {
-        console.log(userId,"Line 35")
+      if (userId === 'a') {
+        console.log(userId, 'Line 35');
         // dispatch(login('Yes'));
         // await AsyncStorage.setItem('isUserId', 'Yes');
-        //   navigation.navigate('OTP');
+        navigation.navigate('OTP');
       } else {
         setWaringText('Invalid Credentials');
       }
     } catch (error) {}
   };
   const handleCreateAccount = () => {
-    console.log("clicked on the create account")
-  }
+    navigation.navigate('Registration');
+  };
   return (
     <ScrollView style={styles.main} showsVerticalScrollIndicator={false}>
       <SafeAreaView style={{backgroundColor: AppColor.primary}} />
@@ -98,7 +100,6 @@ const Login = () => {
             color={AppColor.dark_Green}
           />
         </View>
-
       </View>
     </ScrollView>
   );

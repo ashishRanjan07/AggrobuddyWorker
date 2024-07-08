@@ -25,8 +25,10 @@ import RailSelected from '../../utils/RailSelected';
 import Label from '../../utils/Label';
 import Notch from '../../utils/Notch';
 import CustomButton from '../../components/CustomButton';
+import {useNavigation} from '@react-navigation/native';
 
 const Registration = () => {
+  const navigation = useNavigation();
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [gender, setGender] = useState('');
@@ -147,6 +149,7 @@ const Registration = () => {
       workType,
       profileImage,
       'Line 131',
+      navigation.navigate('Login'),
     );
   };
 
