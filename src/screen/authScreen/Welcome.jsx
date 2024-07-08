@@ -5,7 +5,10 @@ import LottieView from 'lottie-react-native';
 import {responsive} from '../../utils/Responsive';
 import CustomButton from '../../components/CustomButton';
 import DeviceInfo from 'react-native-device-info';
+import { useNavigation } from '@react-navigation/native';
 const Welcome = () => {
+  const navigation = useNavigation();
+
   return (
     <ScrollView style={styles.main} showsVerticalScrollIndicator={false}>
       <View style={styles.animationHolder}>
@@ -32,12 +35,12 @@ const Welcome = () => {
         <CustomButton
           title={'Registration'}
           color={AppColor.dark_Yellow}
-          handleAction={() => console.log('Registration')}
+          handleAction={() => navigation.navigate('Registration')}
         />
         <CustomButton
           title={'Worker Login'}
           color={AppColor.dark_Yellow}
-          handleAction={() => console.log('Worker Login')}
+          handleAction={() => navigation.navigate('Login')}
         />
       </View>
       <Text style={styles.versionText}>
