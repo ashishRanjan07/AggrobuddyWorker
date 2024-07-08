@@ -10,8 +10,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "lottie-react-native": "^6.7.2",
     "react": "18.2.0",
-    "react-native": "0.74.3"
+    "react-native": "0.74.3",
+    "react-native-device-info": "^11.1.0",
+    "react-native-image-picker": "^7.1.2",
+    "react-native-modal": "^13.0.1",
+    "react-native-range-slider": "^0.1.2",
+    "react-native-vector-icons": "^10.1.0",
+    "rn-range-slider": "^2.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -32,5 +39,10 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/"
+    ]
   }
 }
