@@ -29,7 +29,7 @@ const ProfileList = () => {
           />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.itemHolder}>
+      <TouchableOpacity style={styles.itemHolder} onPress={()=> navigation.navigate('Work History')}>
         <View style={styles.contentHolder}>
           <MaterialCommunityIcons
             name="history"
