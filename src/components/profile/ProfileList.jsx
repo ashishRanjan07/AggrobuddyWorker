@@ -29,7 +29,9 @@ const ProfileList = () => {
           />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.itemHolder} onPress={()=> navigation.navigate('Work History')}>
+      <TouchableOpacity
+        style={styles.itemHolder}
+        onPress={() => navigation.navigate('Work History')}>
         <View style={styles.contentHolder}>
           <MaterialCommunityIcons
             name="history"
@@ -46,7 +48,9 @@ const ProfileList = () => {
           />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.itemHolder}>
+      <TouchableOpacity
+        style={styles.itemHolder}
+        onPress={() => navigation.navigate('Transaction')}>
         <View style={styles.contentHolder}>
           <FontAwesome
             name="rupee"
