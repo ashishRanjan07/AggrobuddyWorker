@@ -7,11 +7,16 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {responsive} from '../../utils/Responsive';
 import AppColor from '../../utils/AppColor';
+import {useNavigation} from '@react-navigation/native';
 
 const ProfileList = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.view}>
-      <TouchableOpacity style={styles.itemHolder}>
+      <TouchableOpacity
+        style={styles.itemHolder}
+        onPress={() => navigation.navigate('Edit Profile')}>
         <View style={styles.contentHolder}>
           <Feather name="user" size={responsive(35)} color={AppColor.primary} />
           <Text style={styles.list}>My Profile</Text>
