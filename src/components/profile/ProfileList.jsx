@@ -98,7 +98,7 @@ const ProfileList = () => {
           />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.itemHolder}>
+      <TouchableOpacity style={styles.itemHolder} onPress={()=> navigation.navigate('Setting')}>
         <View style={styles.contentHolder}>
           <AntDesign
             name="setting"
