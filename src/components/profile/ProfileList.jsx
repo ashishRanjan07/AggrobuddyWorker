@@ -1,5 +1,5 @@
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import React, { useState } from 'react';
+import {StyleSheet, Text, TouchableOpacity, View, Switch} from 'react-native';
+import React, {useState} from 'react';
 import Feather from 'react-native-vector-icons/Feather';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -12,15 +12,20 @@ import LogoutModal from './LogoutModal';
 
 const ProfileList = () => {
   const navigation = useNavigation();
-  const [showLogoutModal,setShowLogoutModal] = useState(false);
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
+  const [showNotification, setShowNotification] = useState(true);
 
-const handleLogoutModal = () => {
-  hideLogoutModal()
-}
+  const handleLogoutModal = () => {
+    hideLogoutModal();
+  };
 
-const hideLogoutModal = () => {
-  setShowLogoutModal(!showLogoutModal)
-}
+  const hideLogoutModal = () => {
+    setShowLogoutModal(!showLogoutModal);
+  };
+
+  const toggleNotification = () => {
+    setShowNotification(previousState => !previousState);
+  };
   return (
     <View style={styles.view}>
       <TouchableOpacity
@@ -110,7 +115,10 @@ const hideLogoutModal = () => {
           />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.itemHolder}>
+      {/* Notification */}
+      <TouchableOpacity
+        style={styles.itemHolder}
+        onPress={() => console.log('Clicked on the notifaction section')}>
         <View style={styles.contentHolder}>
           <Ionicons
             name="notifications-outline"
@@ -120,14 +128,18 @@ const hideLogoutModal = () => {
           <Text style={styles.list}>Notification</Text>
         </View>
         <View>
-          <Feather
-            name="arrow-right-circle"
-            size={responsive(35)}
-            color={AppColor.primary}
+          <Switch
+            trackColor={{false: '#767577', true: AppColor.primary}}
+            thumbColor={showNotification ? AppColor.white : '#f4f3f4'}
+            ios_backgroundColor="#3e3e3e"
+            onValueChange={toggleNotification}
+            value={showNotification}
           />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.itemHolder} onPress={() => setShowLogoutModal(!showLogoutModal)}>
+      <TouchableOpacity
+        style={styles.itemHolder}
+        onPress={() => setShowLogoutModal(!showLogoutModal)}>
         <View style={styles.contentHolder}>
           <AntDesign
             name="logout"
@@ -145,9 +157,9 @@ const hideLogoutModal = () => {
         </View>
       </TouchableOpacity>
       <LogoutModal
-      visible={showLogoutModal}
-      onClose={hideLogoutModal}
-      onConfirm={handleLogoutModal}
+        visible={showLogoutModal}
+        onClose={hideLogoutModal}
+        onConfirm={handleLogoutModal}
       />
     </View>
   );
