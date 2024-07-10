@@ -81,7 +81,9 @@ const ProfileList = () => {
           />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.itemHolder}>
+      <TouchableOpacity
+        style={styles.itemHolder}
+        onPress={() => navigation.navigate('KYC')}>
         <View style={styles.contentHolder}>
           <AntDesign
             name="idcard"
@@ -98,7 +100,9 @@ const ProfileList = () => {
           />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.itemHolder} onPress={()=> navigation.navigate('Setting')}>
+      <TouchableOpacity
+        style={styles.itemHolder}
+        onPress={() => navigation.navigate('Setting')}>
         <View style={styles.contentHolder}>
           <AntDesign
             name="setting"
