@@ -1,5 +1,5 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import Feather from 'react-native-vector-icons/Feather';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -8,10 +8,19 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {responsive} from '../../utils/Responsive';
 import AppColor from '../../utils/AppColor';
 import {useNavigation} from '@react-navigation/native';
+import LogoutModal from './LogoutModal';
 
 const ProfileList = () => {
   const navigation = useNavigation();
+  const [showLogoutModal,setShowLogoutModal] = useState(false);
 
+const handleLogoutModal = () => {
+  hideLogoutModal()
+}
+
+const hideLogoutModal = () => {
+  setShowLogoutModal(!showLogoutModal)
+}
   return (
     <View style={styles.view}>
       <TouchableOpacity
@@ -91,7 +100,7 @@ const ProfileList = () => {
             size={responsive(35)}
             color={AppColor.primary}
           />
-          <Text style={styles.list}>Setting</Text>
+          <Text style={styles.list}>Settings</Text>
         </View>
         <View>
           <Feather
@@ -118,7 +127,7 @@ const ProfileList = () => {
           />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.itemHolder}>
+      <TouchableOpacity style={styles.itemHolder} onPress={() => setShowLogoutModal(!showLogoutModal)}>
         <View style={styles.contentHolder}>
           <AntDesign
             name="logout"
@@ -135,6 +144,11 @@ const ProfileList = () => {
           />
         </View>
       </TouchableOpacity>
+      <LogoutModal
+      visible={showLogoutModal}
+      onClose={hideLogoutModal}
+      onConfirm={handleLogoutModal}
+      />
     </View>
   );
 };
