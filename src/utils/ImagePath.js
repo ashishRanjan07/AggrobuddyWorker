@@ -3,4 +3,5 @@ export default Images = {
     splash:require("../assets/image/imageOne.png"),
     indoor:require("../assets/image/indoor.jpg"),
     outdoor:require("../assets/image/outdoor.jpg"),
+    noInternet:require("../assets/image/noInternet.jpg")
 }

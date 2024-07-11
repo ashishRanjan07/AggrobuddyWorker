@@ -96,8 +96,12 @@ const Kyc = () => {
         </TouchableOpacity>
 
         {/* Your upload status */}
-        {idImage && <Text style={styles.successText}>Id Upload : - Success</Text>}
-        {profileImage && <Text style={styles.successText}>Image Upload : - Success</Text>}
+        {idImage && (
+          <Text style={styles.successText}>Id Upload : - Success</Text>
+        )}
+        {profileImage && (
+          <Text style={styles.successText}>Image Upload : - Success</Text>
+        )}
       </View>
     </ScrollView>
   );
@@ -168,9 +172,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto-Regular',
     lineHeight: responsive(20),
   },
-  successText:{
-    fontSize:responsive(18),
-    fontFamily:'Roboto-Medium',
-    color:AppColor.success
-  }
+  successText: {
+    fontSize: responsive(18),
+    fontFamily: 'Roboto-Medium',
+    color: AppColor.success,
+  },
 });

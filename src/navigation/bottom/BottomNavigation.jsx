@@ -8,6 +8,7 @@ import AppColor from '../../utils/AppColor';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import {responsive} from '../../utils/Responsive';
 import {Alert, StyleSheet} from 'react-native';
+import NoInternet from '../../utils/NoInternet';
 
 const Tab = createMaterialBottomTabNavigator();
 
