@@ -1,0 +1,213 @@
+[
+    {
+      "id": 1,
+      "offered_by": "Farmer",
+      "offered_by_name": "Radhe Shyaam",
+      "job_name": "Harvesting",
+      "job_location": {
+        "name": "Bairiya, Patna, Bihar",
+        "latitude": 25.6731,
+        "longitude": 85.1285
+      },
+      "job_requirement_time": "10 days",
+      "rate": "800/day",
+      "job_description": "Join our team at Sunny Fields Farm! We're looking for energetic Harvest Assistants to help with our seasonal produce. Must have a keen eye for quality and a willingness to work outdoors."
+    },
+    {
+      "id": 2,
+      "offered_by": "Merchant",
+      "offered_by_name": "Sita Devi",
+      "job_name": "Harvesting 2",
+      "job_location": {
+        "name": "Downtown Market, Patna, Bihar",
+        "latitude": 25.6731,
+        "longitude": 85.1285
+      },
+      "job_requirement_time": "6 months",
+      "rate": "15000/month",
+      "job_description": "We are seeking a dynamic Sales Associate to join our team at the Downtown Market. Your role will involve showcasing and selling a variety of fresh produce sourced directly from local farms. Excellent customer service skills and knowledge of agricultural products are essential."
+    },
+    {
+      "id": 3,
+      "offered_by": "Farmer",
+      "offered_by_name": "Mahesh Kumar",
+      "job_name": "Tractor Operator",
+      "job_location": {
+        "name": "Village Farms, Muzaffarpur, Bihar",
+        "latitude": 26.1225,
+        "longitude": 85.3667
+      },
+      "job_requirement_time": "Seasonal",
+      "rate": "1200/day",
+      "job_description": "Experienced Tractor Operators needed for Village Farms. Seasonal work available. Must have valid driving license and good mechanical aptitude."
+    },
+    {
+      "id": 4,
+      "offered_by": "Merchant",
+      "offered_by_name": "Rajeshwari",
+      "job_name": "Inventory Manager",
+      "job_location": {
+        "name": "Central Warehouse, Patna, Bihar",
+        "latitude": 25.6731,
+        "longitude": 85.1285
+      },
+      "job_requirement_time": "12 months",
+      "rate": "25000/month",
+      "job_description": "Inventory Manager position open at Central Warehouse. Responsible for managing stock levels, supplier relationships, and optimizing storage space. Experience in logistics preferred."
+    },
+    {
+      "id": 5,
+      "offered_by": "Farmer",
+      "offered_by_name": "Gopal Sharma",
+      "job_name": "Fruit Picker",
+      "job_location": {
+        "name": "Apple Orchards, Gaya, Bihar",
+        "latitude": 24.8075,
+        "longitude": 85.2333
+      },
+      "job_requirement_time": "8 weeks",
+      "rate": "700/day",
+      "job_description": "Seeking Fruit Pickers for our Apple Orchards. Work during peak season. Must be able to climb trees and handle delicate fruits carefully."
+    },
+    {
+      "id": 6,
+      "offered_by": "Merchant",
+      "offered_by_name": "Lakshmi",
+      "job_name": "Quality Assurance Officer",
+      "job_location": {
+        "name": "Quality Control Lab, Patna, Bihar",
+        "latitude": 25.6731,
+        "longitude": 85.1285
+      },
+      "job_requirement_time": "Ongoing",
+      "rate": "18000/month",
+      "job_description": "Quality Assurance Officer needed to ensure the highest standards of our agricultural products. Background in food science or related field desired."
+    },
+    {
+      "id": 7,
+      "offered_by": "Farmer",
+      "offered_by_name": "Ram Singh",
+      "job_name": "Irrigation Specialist",
+      "job_location": {
+        "name": "Rice Paddies, Chapra, Bihar",
+        "latitude": 25.6667,
+        "longitude": 86.8333
+      },
+      "job_requirement_time": "Year-round",
+      "rate": "10000/month",
+      "job_description": "Irrigation Specialist required for managing water resources efficiently in rice paddies. Knowledge of modern irrigation techniques is essential."
+    },
+    {
+      "id": 8,
+      "offered_by": "Merchant",
+      "offered_by_name": "Mukesh",
+      "job_name": "Marketing Coordinator",
+      "job_location": {
+        "name": "Head Office, Patna, Bihar",
+        "latitude": 25.6731,
+        "longitude": 85.1285
+      },
+      "job_requirement_time": "12 months",
+      "rate": "30000/month",
+      "job_description": "Marketing Coordinator role available. Focus on promoting our range of organic farming products. Strong digital marketing skills required."
+    },
+    {
+      "id": 9,
+      "offered_by": "Farmer",
+      "offered_by_name": "Kamla Devi",
+      "job_name": "Animal Caretaker",
+      "job_location": {
+        "name": "Livestock Barns, Bhagalpur, Bihar",
+        "latitude": 25.3167,
+        "longitude": 87.0167
+      },
+      "job_requirement_time": "Year-round",
+      "rate": "8000/month",
+      "job_description": "Animal Caretaker needed for our livestock barns. Responsibilities include feeding, grooming, and health monitoring of animals. Previous experience preferred."
+    },
+    {
+      "id": 10,
+      "offered_by": "Merchant",
+      "offered_by_name": "Neha",
+      "job_name": "Logistics Manager",
+      "job_location": {
+        "name": "Distribution Center, Patna, Bihar",
+        "latitude": 25.6731,
+        "longitude": 85.1285
+      },
+      "job_requirement_time": "12 months",
+      "rate": "35000/month",
+      "job_description": "Logistics Manager to oversee the distribution of our agricultural products nationwide. Proven track record in logistics and supply chain management is essential."
+    },
+    {
+      "id": 11,
+      "offered_by": "Farmer",
+      "offered_by_name": "Jagdish",
+      "job_name": "Soil Analyst",
+      "job_location": {
+        "name": "Research Farm, Darbhanga, Bihar",
+        "latitude": 26.1833,
+        "longitude": 85.9167
+      },
+      "job_requirement_time": "6 months",
+      "rate": "9000/month",
+      "job_description": "Soil Analyst position open for research purposes. Analyze soil samples to determine nutrient content and recommend amendments. Degree in agronomy required."
+    },
+    {
+      "id": 12,
+      "offered_by": "Merchant",
+      "offered_by_name": "Anita",
+      "job_name": "Product Development Specialist",
+      "job_location": {
+        "name": "Innovation Lab, Patna, Bihar",
+        "latitude": 25.6731,
+        "longitude": 85.1285
+      },
+      "job_requirement_time": "12 months",
+      "rate": "40000/month",
+      "job_description": "Product Development Specialist to innovate and develop new organic farming products. Background in chemistry or biology with a passion for sustainability."
+    },
+    {
+      "id": 13,
+      "offered_by": "Farmer",
+      "offered_by_name": "Prakash",
+      "job_name": "Poultry Farmer",
+      "job_location": {
+        "name": "Chicken Coops, Nalanda, Bihar",
+        "latitude": 25.2667,
+        "longitude": 85.5000
+      },
+      "job_requirement_time": "Year-round",
+      "rate": "12000/month",
+      "job_description": "Poultry Farmer sought for managing chicken coops. Responsibilities include breeding, egg collection, and general coop maintenance. Experience in poultry farming is a plus."
+    },
+    {
+      "id": 14,
+      "offered_by": "Merchant",
+      "offered_by_name": "Ravi",
+      "job_name": "E-commerce Manager",
+      "job_location": {
+        "name": "Online Store HQ, Patna, Bihar",
+        "latitude": 25.6731,
+        "longitude": 85.1285
+      },
+      "job_requirement_time": "12 months",
+      "rate": "45000/month",
+      "job_description": "E-commerce Manager to grow our online presence and sales. Expertise in digital platforms and e-commerce strategies is crucial."
+    },
+    {
+      "id": 15,
+      "offered_by": "Farmer",
+      "offered_by_name": "Uma",
+      "job_name": "Agronomist",
+      "job_location": {
+        "name": "Consultation Services, Patna, Bihar",
+        "latitude": 25.6731,
+        "longitude": 85.1285
+      },
+      "job_requirement_time": "Flexible",
+      "rate": "10000/month",
+      "job_description": "Agronomist available for consultation services. Provide advice on crop selection, soil management, and pest control. Bachelor's degree in agronomy required."
+    }
+  ]
+  

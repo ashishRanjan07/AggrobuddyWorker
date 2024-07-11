@@ -8,7 +8,6 @@ import AppColor from '../../utils/AppColor';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import {responsive} from '../../utils/Responsive';
 import {Alert, StyleSheet} from 'react-native';
-import NoInternet from '../../utils/NoInternet';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -19,7 +18,9 @@ const BottomNavigation = () => {
       inactiveColor={AppColor.black}
       activeIndicatorStyle={style.main}
       onTabLongPress={() => Alert.alert('Show ')}
-      barStyle={style.barStyle}>
+      barStyle={style.barStyle}
+      keyboardHidesNavigationBar={true} 
+      >
       <Tab.Screen
         name="Home"
         component={Home}
@@ -34,34 +35,8 @@ const BottomNavigation = () => {
           ),
         }}
       />
-      <Tab.Screen
-        name="Feed"
-        component={Post}
-        options={{
-          tabBarLabel: 'Feed',
-          tabBarIcon: ({color}) => (
-            <AntDesign
-              name="hearto"
-              size={responsive(24)}
-              color={AppColor.black}
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Add"
-        component={CreatePost}
-        options={{
-          tabBarLabel: 'Add',
-          tabBarIcon: ({color}) => (
-            <AntDesign
-              name="pluscircle"
-              size={responsive(24)}
-              color={AppColor.black}
-            />
-          ),
-        }}
-      />
+     
+    
       <Tab.Screen
         name="Search"
         component={Search}
@@ -98,19 +73,14 @@ export default BottomNavigation;
 
 const style = StyleSheet.create({
   main: {
-    backgroundColor: AppColor.light_Blue,
+    backgroundColor: AppColor.white,
     width: responsive(40),
     height: responsive(40),
     borderRadius: responsive(20),
   },
   barStyle: {
-    height: responsive(70),
-    width: '95%',
-    borderRadius: responsive(20),
+    justifyContent:'center',
     overflow: 'hidden',
-    alignSelf: 'center',
-    marginBottom: responsive(20),
-    elevation: responsive(10),
     backgroundColor: AppColor.primary,
   },
 });
