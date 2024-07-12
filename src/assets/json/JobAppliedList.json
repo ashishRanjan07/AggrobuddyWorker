@@ -1,0 +1,138 @@
+[
+    {
+      "applicationId": "app001",
+      "workerName": "John Doe",
+      "agricultureTask": "Harvesting Wheat",
+      "status": "Pending",
+      "jobGivenBy": "farmer",
+      "jobAppliedDate": "2024-07-01",
+      "jobAcceptedDate": null
+    },
+    {
+      "applicationId": "app002",
+      "workerName": "Jane Smith",
+      "agricultureTask": "Planting Corn",
+      "status": "Accepted",
+      "jobGivenBy": "merchant",
+      "jobAppliedDate": "2024-06-28",
+      "jobAcceptedDate": "2024-07-05"
+    },
+    {
+      "applicationId": "app003",
+      "workerName": "Michael Brown",
+      "agricultureTask": "Irrigating Crops",
+      "status": "Pending",
+      "jobGivenBy": "farmer",
+      "jobAppliedDate": "2024-07-02",
+      "jobAcceptedDate": null
+    },
+    {
+      "applicationId": "app004",
+      "workerName": "Emily White",
+      "agricultureTask": "Pruning Fruit Trees",
+      "status": "Accepted",
+      "jobGivenBy": "farmer",
+      "jobAppliedDate": "2024-06-30",
+      "jobAcceptedDate": "2024-07-04"
+    },
+    {
+      "applicationId": "app005",
+      "workerName": "Robert Green",
+      "agricultureTask": "Tractor Driving",
+      "status": "Pending",
+      "jobGivenBy": "merchant",
+      "jobAppliedDate": "2024-07-03",
+      "jobAcceptedDate": null
+    },
+    {
+      "applicationId": "app006",
+      "workerName": "Sarah Black",
+      "agricultureTask": "Packing Vegetables",
+      "status": "Accepted",
+      "jobGivenBy": "farmer",
+      "jobAppliedDate": "2024-07-04",
+      "jobAcceptedDate": "2024-07-08"
+    },
+    {
+      "applicationId": "app007",
+      "workerName": "David Blue",
+      "agricultureTask": "Animal Feeding",
+      "status": "Pending",
+      "jobGivenBy": "merchant",
+      "jobAppliedDate": "2024-07-05",
+      "jobAcceptedDate": null
+    },
+    {
+      "applicationId": "app008",
+      "workerName": "Jessica Red",
+      "agricultureTask": "Soil Testing",
+      "status": "Accepted",
+      "jobGivenBy": "farmer",
+      "jobAppliedDate": "2024-07-06",
+      "jobAcceptedDate": "2024-07-09"
+    },
+    {
+      "applicationId": "app009",
+      "workerName": "Daniel Yellow",
+      "agricultureTask": "Weed Control",
+      "status": "Pending",
+      "jobGivenBy": "merchant",
+      "jobAppliedDate": "2024-07-07",
+      "jobAcceptedDate": null
+    },
+    {
+      "applicationId": "app010",
+      "workerName": "Linda Purple",
+      "agricultureTask": "Crop Spraying",
+      "status": "Accepted",
+      "jobGivenBy": "farmer",
+      "jobAppliedDate": "2024-07-08",
+      "jobAcceptedDate": "2024-07-11"
+    },
+    {
+      "applicationId": "app011",
+      "workerName": "Mark Orange",
+      "agricultureTask": "Fertilizer Application",
+      "status": "Pending",
+      "jobGivenBy": "merchant",
+      "jobAppliedDate": "2024-07-09",
+      "jobAcceptedDate": null
+    },
+    {
+      "applicationId": "app012",
+      "workerName": "Patricia Pink",
+      "agricultureTask": "Seed Sowing",
+      "status": "Accepted",
+      "jobGivenBy": "farmer",
+      "jobAppliedDate": "2024-07-10",
+      "jobAcceptedDate": "2024-07-13"
+    },
+    {
+      "applicationId": "app013",
+      "workerName": "Henry Brown",
+      "agricultureTask": "Greenhouse Maintenance",
+      "status": "Pending",
+      "jobGivenBy": "merchant",
+      "jobAppliedDate": "2024-07-11",
+      "jobAcceptedDate": null
+    },
+    {
+      "applicationId": "app014",
+      "workerName": "Olivia Green",
+      "agricultureTask": "Harvesting Tomatoes",
+      "status": "Accepted",
+      "jobGivenBy": "farmer",
+      "jobAppliedDate": "2024-07-12",
+      "jobAcceptedDate": "2024-07-15"
+    },
+    {
+      "applicationId": "app015",
+      "workerName": "William Blue",
+      "agricultureTask": "Packaging Herbs",
+      "status": "Pending",
+      "jobGivenBy": "merchant",
+      "jobAppliedDate": "2024-07-13",
+      "jobAcceptedDate": null
+    }
+  ]
+  

@@ -3,7 +3,9 @@ import React from 'react';
 import AppColor from '../../utils/AppColor';
 import {responsive} from '../../utils/Responsive';
 import Entypo from 'react-native-vector-icons/Entypo';
+import {useNavigation} from '@react-navigation/native';
 const Earn = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.main}>
       <View style={styles.headerHolder}>
@@ -22,7 +24,9 @@ const Earn = () => {
         <Text style={styles.amountText}>Total Amount</Text>
         <Text style={styles.amount}>Rs.25000/-</Text>
       </View>
-      <TouchableOpacity style={styles.viewMore}>
+      <TouchableOpacity
+        style={styles.viewMore}
+        onPress={() => navigation.navigate('Transaction')}>
         <Text style={styles.text}>{`Tap for more info - >`}</Text>
       </TouchableOpacity>
     </View>

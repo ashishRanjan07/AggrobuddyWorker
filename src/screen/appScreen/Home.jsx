@@ -4,6 +4,8 @@ import AppColor from '../../utils/AppColor';
 import Earn from '../../components/home/Earn';
 import HomeHeader from '../../components/home/HomeHeader';
 import LastWorkHistory from '../../components/home/LastWorkHistory';
+import JobAppliedList from '../../components/home/JobAppliedList';
+import FarmerVsMerchantGraph from '../../components/home/FarmerVsMerchantGraph';
 
 const Home = () => {
   return (
@@ -14,6 +16,10 @@ const Home = () => {
       <Earn />
       {/* Last Working History */}
       <LastWorkHistory/>
+      {/* Job Applied list */}
+      <JobAppliedList/>
+      {/* Graph of Earning by merchant vs farmer */}
+<FarmerVsMerchantGraph/>
     </ScrollView>
   );
 };

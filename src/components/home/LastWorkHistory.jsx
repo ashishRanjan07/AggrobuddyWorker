@@ -18,7 +18,6 @@ const LastWorkHistory = () => {
   const [data, setData] = useState();
 
   const modalVisibility = item => {
-    console.log(item, 'ine 20');
     setShowModal(!showModal);
     setData(item);
   };
@@ -58,8 +57,9 @@ const LastWorkHistory = () => {
           <Text style={styles.recordText}>Record</Text>
           <View style={styles.countHolder}>
             <TextInput
-              value={count}
+              value={count.toString()}
               placeholder="C"
+              keyboardType='number-pad'
               onChangeText={text => setCount(text)}
             />
           </View>
