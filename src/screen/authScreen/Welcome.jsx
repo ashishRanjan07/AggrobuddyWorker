@@ -1,52 +1,56 @@
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import AppColor from '../../utils/AppColor';
 import LottieView from 'lottie-react-native';
 import {responsive} from '../../utils/Responsive';
 import CustomButton from '../../components/CustomButton';
 import DeviceInfo from 'react-native-device-info';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 const Welcome = () => {
   const navigation = useNavigation();
 
   return (
-    <ScrollView style={styles.main} showsVerticalScrollIndicator={false}>
-      <View style={styles.animationHolder}>
-        <LottieView
-          source={require('../../assets/animation/worker.json')}
-          autoPlay
-          loop
-          style={styles.animation}
-        />
-      </View>
-      <View style={styles.textHolder}>
-        <Text style={styles.text}>
-          Welcome Worker to the Worker app of the Aggobuddy
+    <>
+      <SafeAreaView style={{backgroundColor: AppColor.primary}} />
+
+      <ScrollView style={styles.main} showsVerticalScrollIndicator={false}>
+        <View style={styles.animationHolder}>
+          <LottieView
+            source={require('../../assets/animation/worker.json')}
+            autoPlay
+            loop
+            style={styles.animation}
+          />
+        </View>
+        <View style={styles.textHolder}>
+          <Text style={styles.text}>
+            Welcome Worker to the Worker app of the Aggobuddy
+          </Text>
+          <Text style={styles.subText}>
+            Discover the seamless bridge between farmers, farm workers, and
+            merchants with Farm & Market Connect! Aggrobuddy simplifies the
+            process of connecting these crucial players in the agricultural
+            ecosystem, ensuring fresh produce reaches consumers efficiently.
+          </Text>
+        </View>
+        {/* Button for Login and sign up */}
+        <View style={styles.buttonHolder}>
+          <CustomButton
+            title={'Registration'}
+            color={AppColor.dark_Yellow}
+            handleAction={() => navigation.navigate('Registration')}
+          />
+          <CustomButton
+            title={'Worker Login'}
+            color={AppColor.dark_Yellow}
+            handleAction={() => navigation.navigate('Login')}
+          />
+        </View>
+        <Text style={styles.versionText}>
+          App Version :- {DeviceInfo.getVersion()}
         </Text>
-        <Text style={styles.subText}>
-          Discover the seamless bridge between farmers, farm workers, and
-          merchants with Farm & Market Connect! Aggrobuddy simplifies the
-          process of connecting these crucial players in the agricultural
-          ecosystem, ensuring fresh produce reaches consumers efficiently.
-        </Text>
-      </View>
-      {/* Button for Login and sign up */}
-      <View style={styles.buttonHolder}>
-        <CustomButton
-          title={'Registration'}
-          color={AppColor.dark_Yellow}
-          handleAction={() => navigation.navigate('Registration')}
-        />
-        <CustomButton
-          title={'Worker Login'}
-          color={AppColor.dark_Yellow}
-          handleAction={() => navigation.navigate('Login')}
-        />
-      </View>
-      <Text style={styles.versionText}>
-        App Version :- {DeviceInfo.getVersion()}
-      </Text>
-    </ScrollView>
+      </ScrollView>
+    </>
   );
 };
 
@@ -99,7 +103,7 @@ const styles = StyleSheet.create({
     color: AppColor.white,
     fontFamily: 'Roboto-Medium',
     textAlign: 'center',
-    marginVertical:responsive(10),
-    width:'100%',
+    marginVertical: responsive(10),
+    width: '100%',
   },
 });

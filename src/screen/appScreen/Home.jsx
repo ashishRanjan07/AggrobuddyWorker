@@ -1,4 +1,4 @@
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import AppColor from '../../utils/AppColor';
 import Earn from '../../components/home/Earn';
@@ -11,6 +11,7 @@ const Home = () => {
   return (
     <ScrollView style={styles.main}>
       {/* HeaderView */}
+      <SafeAreaView style={{backgroundColor: AppColor.primary}} />
       <HomeHeader />
       {/* Earning Section */}
       <Earn />

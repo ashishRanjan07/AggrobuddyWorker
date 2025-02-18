@@ -9,10 +9,12 @@ import {responsive} from '../../utils/Responsive';
 import UserBasicDetails from '../../components/profile/UserBasicDetails';
 import ProfileList from '../../components/profile/ProfileList';
 import DeviceInfo from 'react-native-device-info';
+import { SafeAreaView } from 'react-native';
 
 const Profile = () => {
   return (
     <ScrollView style={styles.main}>
+      <SafeAreaView style={{backgroundColor: AppColor.primary}} />
       <UserBasicDetails />
       <ProfileList/>
       <Text style={styles.versionText}>

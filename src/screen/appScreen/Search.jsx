@@ -1,4 +1,4 @@
-import {StyleSheet, View} from 'react-native';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
 import React, {useState} from 'react';
 import AppColor from '../../utils/AppColor';
 import Data from '../../assets/json/Job.json';
@@ -34,6 +34,7 @@ const Search = () => {
   return (
     <View style={styles.main}>
       {/* Search Bar */}
+      <SafeAreaView style={{backgroundColor: AppColor.primary}} />
       <SearchBox
         onSearch={handleSearch}
         text={searchText}
